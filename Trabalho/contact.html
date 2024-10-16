@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="Imagens/Untitled_logo_5_free-file.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <!-- Fonte do Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Ícones do Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <title>Contato</title>
+    <script>
+        // Função para redirecionar após o envio do formulário (Em Js rs.)
+        function redirecionarParaInicio(event) {
+            event.preventDefault(); 
+            window.location.href = 'index.html'; 
+        }
+    </script>
+    <!-- Inclui o CDN de ícones do FontAwesome -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="Imagens/Untitled_logo_5_free-file.jpg" alt="Logo do Site">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <h1>Formulário de Contato</h1>
+            <form onsubmit="redirecionarParaInicio(event)" method="post">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </main>
+<footer>
+        <div class="contact-info">
+            <p><i class="fas fa-envelope"></i> leonardo2016.lf13@gmail.com</p>
+            <p><i class="fab fa-whatsapp"></i> +55 35 99178-2332</p>
+        </div>
+</footer>
+</body>
+</html>
