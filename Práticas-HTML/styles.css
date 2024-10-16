@@ -1,0 +1,15 @@
+/* Estilos Globais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    background:  linear-gradient(rgb(43, 0, 255) 0%, rgb(38, 117, 201) 25%, rgb(106, 123, 175) 50%, rgb(67, 203, 230) 75%, blue 100%);
+    background-size: cover;
+    color: #fff;
+    height: 100vh; /* Altura total da viewport */
+    display: flex;
+    flex-direction: column; /* Para organizar o header fixo no topo */
+}
