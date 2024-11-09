@@ -50,6 +50,15 @@ header .logo img {
     margin-top: 100px; /* Dá um espaço abaixo do header fixo */
 }
 
+.dados-confirmacao {
+    max-height: 200px; 
+    overflow-y: auto;  
+    border: 1px solid #cccccc00;
+    border-radius: 5px;
+    background-color: #f1f1f100;
+}
+
+
 nav ul {
     list-style: none;
     margin: 0;
